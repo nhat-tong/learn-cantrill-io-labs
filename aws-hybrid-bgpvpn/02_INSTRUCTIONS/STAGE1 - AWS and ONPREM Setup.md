@@ -10,18 +10,15 @@ In this part of the DEMO, you will be creating a few things:-
 First lets create the initial environments.
 
 Open https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/
-
-- Apply `ADVS2SVPN-AWS.yaml` to the `us-east-1` region in your AWS account (Call it AWS) - If prompted ... check capabilities Box
-- Apply `ADVS2SVPN-ONPREM.yaml` to the `us-east-1` region in your AWS account (Call it OMPREM) - If prompted ... check capabilities Box
-
-Wait for both stacks to move into a `CREATE_COMPLETE` status **Estimated time to complete 5-10 mins**
+Make sure you're logged in with an identity with admin permissions and you're using the us-east-1 region.
+Click [THIS LINK](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://learn-cantrill-labs.s3.amazonaws.com/aws-hybrid-bgpvpn/BGPVPNINFRA.yaml&stackName=ADVANCEDVPNDEMO) , it will open the quick create stack page. Scroll to the bottom, check the box and create stack.
 
 # STAGE 1B - CREATE CUSTOMER GATEWAY OBJECTS 
 
 Open a new tab to the VPC Console (https://console.aws.amazon.com/vpc/home?region=us-east-1#)  
 Open a new tab to CloudFormation Console (https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/)  
 In the cloudFormation Tab  
-Click ON-PREM stack  
+Click ADVANCEDVPNDEMO stack  
 Click Outputs  
 Note down IP for `Router1Public` and `Router2Public`  
 
@@ -29,7 +26,6 @@ In the VPC Console https://console.aws.amazon.com/vpc/home?region=us-east-1#
 Select `Customer Gateways` under `Virtual private Network (VPN)`  
 Click `Create Customer gateway`  
 Set Name to `ONPREM-ROUTER1`  
-Click `Dynamic` for routing  
 Set BGP ASN to `65016`  
 Set IP Address to Router1PubIP  
 Click `create Customer gateway`  
@@ -37,8 +33,7 @@ Click `create Customer gateway`
 In the VPC Console https://console.aws.amazon.com/vpc/home?region=us-east-1#  
 Select `Customer Gateways` under `Virtual private Network (VPN)`  
 Click `Create Customer gateway`  
-Set Name to `ONPREM-ROUTER2`  
-Click `Dynamic` for routing  
+Set Name to `ONPREM-ROUTER2`   
 Set BGP ASN to `65016`  
 Set IP Address to Router2PubIP  
 Click `create Customer gateway`  
@@ -53,7 +48,7 @@ Right Click => `Connect`
 Select `Session Manager`  
 Click `Connect`  
 
-run `ping IP_ADDRESS_OF_EC2-B`  
+run `ping IP_ADDRESS_OF_AWS_EC2-B`  
 It doesn't work ... because there's no connectivity.
 
 
