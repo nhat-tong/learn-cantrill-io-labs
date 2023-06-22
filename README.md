@@ -9,6 +9,9 @@ These demos are available in three ways:-
 - as part of [https://learn.cantrill.io](https://learn.cantrill.io) courses - including theory lessons and guided videos.
 - **some** of the popular mini projects have been upgraded with video guides on this repo (people buying my courses supports this)
 
+**💰💰 You can be paid to create new mini projects for this repo ... [click here](https://github.com/acantril/learn-cantrill-io-labs/blob/master/get-paid-to-create-projects.md) for more info 💰💰**  
+*this is made possible via my courses at [learn.cantrill.io](https://learn.cantrill.io) so if you need any training content please check this out*  
+
 The free versions here are fully functional, with instructions & architecture diagrams and are maintained by me.
 
 All demos have a structure ...
@@ -27,15 +30,14 @@ A full range of Video guided versions are available in my courses at https://lea
 - [Implement a Dynamic, BGP Based, Highly-Available Site-to-Site VPN](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-hybrid-bgpvpn)
 - [Building a serverless application using Web Identity Federation](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-cognito-web-identity-federation)
 - [CatPipeline - code commit, build, deploy & pipeline using containers and ECS](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-codepipeline-catpipeline)
+- [Hybrid DNS using Route53 Inbound and Outbound Endpoints](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-hybrid-dns)
+- [Implement a simple client VPN](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-client-vpn)
+- [Pixel Art Image Processing Workflow - Pixelator 3000](https://github.com/acantril/learn-cantrill-io-labs/tree/master/00-aws-simple-demos/aws-lambda-s3-events)
+- [Database Migration using DMS](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-dms-database-migration)
+- [Implement Hybrid Directory - On-premises & AWS](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-hybrid-activedirectory)
 
 ## TEXT ONLY MINI PROJECTS
 
-- [Hybrid DNS using Route53 Inbound and Outbound Endpoints](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-hybrid-dns)
-- [Database Migration using DMS](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-dms-database-migration)
-- [Implement a simple client VPN](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-client-vpn)
-- [Pixelator - Serverless S3 Image Procesing Pipeline](https://github.com/acantril/learn-cantrill-io-labs/tree/master/00-aws-simple-demos/aws-lambda-s3-events)
-
 ## UNDER CONSTRUCTION OR BROKEN PROJECTS (DON'T USE) - fixes in progress
 
-- [Implement Hybrid Directory - On-premises & AWS](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-hybrid-activedirectory)
 - [Patching AWS and On-premises using Systems Manager Patch Manager](https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-patch-manager)
